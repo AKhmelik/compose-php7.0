@@ -11,6 +11,7 @@ services:
       - "./apache2/vhosts:/etc/apache2/from-host"
       - "/etc/hosts:/etc/hosts"
       #- "./php/php.ini:/etc/php/7.0/apache2/php.ini"
+      - "./apache2/log:/var/log/apache2"
     links:
       - "db:db"
   db:
